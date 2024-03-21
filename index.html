@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Racing Game</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+
+    <h1>Cars Racing Game</h1>
+    <p>Bet on your favorite car and get lucky!</p>
+    <label for="bet">Bet value:</label>
+    <input type="number" id="bet" name="bet" min="5">
+    <button onclick="moveCar();">Bet</button>
+    <p>Your balance is R$<span id="balance"></span></p>
+    <p>Car selection: </p>
+    <div class="color-box" style="background-color: #ffcc00;" onclick="selectedCar('#ffcc00')"></div>
+    <div class="color-box" style="background-color: #007bff;" onclick="selectedCar('#007bff')"></div>
+    <div class="color-box" style="background-color: #dc3545;" onclick="selectedCar('#dc3545')"></div>
+    <div class="color-box" style="background-color: #28a745;"onclick="selectedCar('#28a745')"></div>
+    <div class="color-box" style="background-color: #6f42c1;"onclick="selectedCar('#6f42c1')"></div>
+    <div class="speedwayFinishLine">
+        <div class="speedway">
+            <div class="lane">
+                <div class="car" style="background-color: #ffcc00"></div>
+            </div>
+            <div class="lane">
+                <div class="car" style="background-color: #007bff"></div>
+            </div>
+            <div class="lane">
+                <div class="car" style="background-color: #dc3545"></div>
+            </div>
+            <div class="lane">
+                <div class="car" style="background-color: #28a745"></div>
+            </div>
+            <div class="lane">
+                <div class="car" style="background-color: #6f42c1;"></div>
+            </div>
+        </div>
+        <div class="finishLine">Finish Line</div>
+    </div>
+</body>
+</html>
